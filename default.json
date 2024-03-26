@@ -1,30 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
+  "extends": ["config:best-practices", ":automergeMinor", ":automergeDigest", ":enableVulnerabilityAlerts", "docker:pinDigests", "group:allDigest", "helpers:pinGitHubActionDigestsToSemver"],
   "assignees": ["jquagga"],
   "rebaseWhen": "behind-base-branch",
-  "lockFileMaintenance": {
-    "automerge": true
-  },
-  "minor": {
-    "automerge": true
-  },
-  "patch": {
-    "automerge": true
-  },
-  "pin": {
-    "automerge": true
-  },
-  "docker-compose": {
-    "enabled": false,
-    "digest": {
-      "enabled": false
-    }
-  },
   "dockerfile": {
-    "enabled": true
-  },
-  "vulnerabilityAlerts": {
-    "enabled": true
+    "enabled": true,
+    "minor": {
+      "enabled": true
+    }
   }
 }
