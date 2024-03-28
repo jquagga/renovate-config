@@ -19,12 +19,9 @@
       "enabled": true
     }
   },
-  "packageRules": [
-    {
-      "datasources": ["docker"],
-      "digest": {
-        "enabled": true
-      }
-    }
-  ]
+  "packageRules": [{
+    "managers": ["docker-compose"],
+    "updateTypes": ["pin"],
+    "enabled": false
+}]
 }
