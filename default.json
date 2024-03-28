@@ -6,7 +6,8 @@
     ":automergeDigest",
     ":enableVulnerabilityAlerts",
     "group:allDigest",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigests",
+    "docker:enableMajor"
   ],
   "assignees": ["jquagga"],
   "rebaseWhen": "behind-base-branch",
@@ -19,9 +20,18 @@
       "enabled": true
     }
   },
-  "packageRules": [{
-    "managers": ["docker-compose"],
-    "updateTypes": ["pin"],
-    "enabled": false
-}]
+  "packageRules": [
+		{
+			"managers": [
+				"docker"
+			],
+			"updateTypes": [
+				"pin",
+				"digest",
+        "minor",
+        "major"
+			],
+			"enabled": true
+		}
+	]
 }
