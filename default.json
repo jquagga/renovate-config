@@ -15,11 +15,6 @@
     "enabled": true,
     "minor": {
       "enabled": true
-    },
-  },
-  "docker-compose": {
-    "digest": {
-      "enabled": false
     }
   }
 }
