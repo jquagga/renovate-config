@@ -11,27 +11,11 @@
   ],
   "assignees": ["jquagga"],
   "rebaseWhen": "behind-base-branch",
-  "dockerfile": {
-    "enabled": true,
-    "minor": {
-      "enabled": true
-    },
-    "digest": {
+  "packageRules": [
+    {
+      "managers": ["docker"],
+      "updateTypes": ["pin", "digest", "minor", "major"],
       "enabled": true
     }
-  },
-  "packageRules": [
-		{
-			"managers": [
-				"docker"
-			],
-			"updateTypes": [
-				"pin",
-				"digest",
-        "minor",
-        "major"
-			],
-			"enabled": true
-		}
-	]
+  ]
 }
