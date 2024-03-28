@@ -11,6 +11,9 @@
   ],
   "assignees": ["jquagga"],
   "rebaseWhen": "behind-base-branch",
+  "docker-compose": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "managers": ["docker"],
