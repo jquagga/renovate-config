@@ -6,9 +6,7 @@
     ":automergeDigest",
     ":enableVulnerabilityAlerts",
     "group:allDigest",
-    "helpers:pinGitHubActionDigests",
     "docker:enableMajor",
-    "docker:pinDigests",
     ":rebaseStalePrs",
     ":assignee(jquagga)"
   ],
