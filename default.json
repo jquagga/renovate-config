@@ -8,7 +8,9 @@
     "group:allDigest",
     "docker:enableMajor",
     ":rebaseStalePrs",
-    ":assignee(jquagga)"
+    ":assignee(jquagga)",
+    "regexManagers:dockerfileVersions",
+    "regexManagers:githubActionsVersions"
   ],
   "docker-compose": {
     "enabled": false
