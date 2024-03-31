@@ -7,18 +7,12 @@
     ":enableVulnerabilityAlerts",
     "group:allDigest",
     "helpers:pinGitHubActionDigests",
-    "docker:enableMajor"
+    "docker:enableMajor",
+    "docker:pinDigests",
+    ":rebaseStalePrs",
+    ":assignee(jquagga)"
   ],
-  "assignees": ["jquagga"],
-  "rebaseWhen": "behind-base-branch",
   "docker-compose": {
     "enabled": false
-  },
-  "packageRules": [
-    {
-      "managers": ["docker"],
-      "updateTypes": ["pin", "digest", "minor", "major"],
-      "enabled": true
-    }
-  ]
+  }
 }
