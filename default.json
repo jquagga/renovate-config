@@ -10,7 +10,8 @@
     ":rebaseStalePrs",
     ":assignee(jquagga)",
     "regexManagers:dockerfileVersions",
-    "regexManagers:githubActionsVersions"
+    "regexManagers:githubActionsVersions",
+    "schedule:daily"
   ],
   "docker-compose": {
     "enabled": false
