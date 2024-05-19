@@ -13,7 +13,6 @@
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions",
     "schedule:daily",
-    "timezone": "America/New_York",
     ":disableRateLimiting",
   ],
   "docker-compose": {
