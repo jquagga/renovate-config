@@ -6,6 +6,7 @@
     ":automergeDigest",
     ":enableVulnerabilityAlerts",
     "group:allNonMajor",
+    "group:allDigest",
     "docker:enableMajor",
     ":rebaseStalePrs",
     ":assignee(jquagga)",
