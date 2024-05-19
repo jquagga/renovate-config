@@ -13,8 +13,12 @@
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions",
     "schedule:daily",
-    ":disableRateLimiting"
+    ":timezone(America/New_York)",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimit20"
   ],
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
   "docker-compose": {
     "enabled": false
   },
