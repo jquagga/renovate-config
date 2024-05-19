@@ -13,7 +13,7 @@
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions",
     "schedule:daily",
-    ":disableRateLimiting",
+    ":disableRateLimiting"
   ],
   "docker-compose": {
     "enabled": false
