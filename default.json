@@ -12,7 +12,9 @@
     ":assignee(jquagga)",
     "regexManagers:dockerfileVersions",
     "regexManagers:githubActionsVersions",
-    "schedule:daily"
+    "schedule:daily",
+    "timezone": "America/New_York",
+    ":disableRateLimiting",
   ],
   "docker-compose": {
     "enabled": false
