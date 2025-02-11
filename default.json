@@ -14,7 +14,8 @@
     "regexManagers:githubActionsVersions",
     ":timezone(America/New_York)",
     ":prHourlyLimitNone",
-    ":prConcurrentLimit20"
+    ":prConcurrentLimit20",
+    "npm:unpublishSafe"
   ],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
