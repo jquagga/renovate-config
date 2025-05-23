@@ -24,5 +24,8 @@
   },
   "dockerfile": {
     "enabled": true
+  },
+  lockFileMaintenance: {
+    "enabled": true,
   }
 }
