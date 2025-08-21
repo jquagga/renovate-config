@@ -15,7 +15,9 @@
     ":timezone(America/New_York)",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
-    "npm:unpublishSafe"
+    "npm:unpublishSafe",
+    "schedule:automergeWeekly",
+    "security:openssf-scorecard"
   ],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
