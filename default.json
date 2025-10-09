@@ -10,8 +10,8 @@
     "docker:enableMajor",
     ":rebaseStalePrs",
     ":assignee(jquagga)",
-    "regexManagers:dockerfileVersions",
-    "regexManagers:githubActionsVersions",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
     ":timezone(America/New_York)",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
@@ -21,13 +21,7 @@
   ],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
-  "docker-compose": {
-    "enabled": false
-  },
-  "dockerfile": {
-    "enabled": true
-  },
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  "docker-compose": { "enabled": false },
+  "dockerfile": { "enabled": true },
+  "lockFileMaintenance": { "enabled": true }
 }
