@@ -16,12 +16,37 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     "npm:unpublishSafe",
-    "schedule:automergeWeekly",
+    "schedule:weekly",
     "security:openssf-scorecard"
   ],
+  "labels": ["dependencies"],
+  "rebaseWhen": "auto",
+  "suppressNotifications": ["prIgnoreNotification"],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "vulnerabilityAlerts": {
+    "labels": ["security", "dependencies"],
+    "schedule": ["at any time"]
+  },
   "docker-compose": { "enabled": false },
   "dockerfile": { "enabled": true },
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 5am on Monday"]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "labels": ["major"]
+    },
+    {
+      "matchDatasources": ["docker"],
+      "labels": ["docker"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "minimumReleaseAge": "3 days",
+      "stabilityDays": 3
+    }
+  ]
 }
