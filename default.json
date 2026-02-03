@@ -35,18 +35,8 @@
     "schedule": ["before 5am on Monday"]
   },
   "packageRules": [
-    {
-      "matchUpdateTypes": ["major"],
-      "labels": ["major"]
-    },
-    {
-      "matchDatasources": ["docker"],
-      "labels": ["docker"]
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "minimumReleaseAge": "3 days",
-      "stabilityDays": 3
-    }
+    { "matchUpdateTypes": ["major"], "labels": ["major"] },
+    { "matchDatasources": ["docker"], "labels": ["docker"] },
+    { "matchUpdateTypes": ["minor", "patch"], "minimumReleaseAge": "3 days" }
   ]
 }
