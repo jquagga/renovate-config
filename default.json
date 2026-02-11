@@ -17,7 +17,7 @@
     ":timezone(America/New_York)",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
-    "npm",
+    ":npm",
     "schedule:weekly",
     "security:openssf-scorecard",
     ":maintainLockFilesWeekly",
