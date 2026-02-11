@@ -25,13 +25,13 @@
     "security:minimumReleaseAgeNpm",
     "mergeConfidence:all-badges",
     "preview:dockerCompose",
-    "preview:dockerVersions",
-    "pruneStaleBranches:true"
+    "preview:dockerVersions"
   ],
   "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
   "suppressNotifications": ["prIgnoreNotification"],
   "osvVulnerabilityAlerts": true,
+  "pruneStaleBranches": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "vulnerabilityAlerts": {
     "labels": ["security", "dependencies"],
