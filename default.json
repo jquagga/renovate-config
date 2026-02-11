@@ -17,24 +17,25 @@
     ":timezone(America/New_York)",
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
-    "npm:unpublishSafe",
+    "npm",
     "schedule:weekly",
-    "security:openssf-scorecard"
+    "security:openssf-scorecard",
+    ":maintainLockFilesWeekly",
+    ":docker",
+    "security:minimumReleaseAgeNpm",
+    "mergeConfidence:all-badges",
+    "preview:dockerCompose",
+    "preview:dockerVersions",
+    "pruneStaleBranches:true"
   ],
   "labels": ["dependencies"],
-  "rebaseWhen": "auto",
+  "rebaseWhen": "conflicted",
   "suppressNotifications": ["prIgnoreNotification"],
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "vulnerabilityAlerts": {
     "labels": ["security", "dependencies"],
     "schedule": ["at any time"]
-  },
-  "docker-compose": { "enabled": false },
-  "dockerfile": { "enabled": true },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["before 5am on Monday"]
   },
   "packageRules": [
     { "matchUpdateTypes": ["major"], "labels": ["major"] },
