@@ -18,15 +18,17 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimit20",
     ":npm",
-    "schedule:weekly",
     "security:openssf-scorecard",
-    ":maintainLockFilesWeekly",
     ":docker",
     "security:minimumReleaseAgeNpm",
     "mergeConfidence:all-badges",
     "preview:dockerCompose",
     "preview:dockerVersions"
   ],
+  "schedule": ["before 4am on sunday"],
+  "lockFileMaintenance": {
+    "schedule": ["before 4am on monday"]
+  },
   "labels": ["dependencies"],
   "rebaseWhen": "conflicted",
   "suppressNotifications": ["prIgnoreNotification"],
