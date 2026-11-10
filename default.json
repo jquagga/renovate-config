@@ -21,6 +21,7 @@
   "pruneStaleBranches": true,
   "dependencyDashboardOSVVulnerabilitySummary": "all",
   "vulnerabilityAlerts": {
+    "enabled": true,
     "labels": ["security", "dependencies"],
     "schedule": ["at any time"]
   },
